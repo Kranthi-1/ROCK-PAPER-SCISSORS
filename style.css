@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Barlow Semi Condensed",sans-serif;
+}
+.title{
+    margin-left: 30px;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(134.34% 134.34% at 50% 0%,#1f3757 0%,#131537 100%);
+    align-items: center;
+}
+.Scoreboard{
+    width: 700px;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin-top: 50px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.score{
+    width: 120px;
+    height: 117px; 
+    background-color: white;
+    border-radius: 25px; 
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.score h1{
+    color:#565468;
+    font-size: 56px;
+}
+.score p{
+    color: #8697E4;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 2px;
+
+}
+.hands{
+    background-image: url("images/triangle.png");
+    background-repeat: no-repeat;
+    background-position:center ;
+    width: 450px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:60px ;
+}
+.scissors{
+    margin-left: 20px;
+}
+.paper{
+    margin-right: 20px;
+}
+.hands .hand{
+    cursor: pointer;
+    transition: all 0.30s;
+
+}
+.hands .hand:hover{
+    transform: translate3d(0px,-8px,0px);
+}
+.contest{
+    width: 900px; 
+    display: none;
+    margin-top: 50px;
+
+}
+.contest img{
+    width: 270px;
+    height: 270px;
+}
+.contest > div{
+    flex:1;
+
+}
+.contest h1{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.contest .handImageContainer{
+    display: flex;
+    justify-content: center;
+
+}
+.referee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.referee h1{
+    font-size: 50px;
+
+}
+.newGame{
+    background-color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.25s;
+    
+}
+.newGame:hover{
+    background-color: wheat;
+    transform: translate3d(0px,-5px,0px);
+}
+
+.footer h1{
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    padding: 8px 24px;
+    color: whitesmoke;
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 100px;
+    text-align: center;
+  
+    transition: all 0.25s;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.footer h1:hover{
+    transform: translate3d(0px,-8px,0px);
+}
+.footer{
+    margin-top: -65px;
+}
+
+.fimg{
+    margin-top: 100px;
+    display: none;
+}
